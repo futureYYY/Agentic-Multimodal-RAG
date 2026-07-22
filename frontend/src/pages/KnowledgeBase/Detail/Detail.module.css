@@ -1,0 +1,58 @@
+/**
+ * 知识库详情页样式
+ */
+
+.container {
+  max-width: 1200px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.statsCard {
+  margin-bottom: 16px;
+  border-radius: var(--border-radius-lg);
+}
+
+.mainCard {
+  border-radius: var(--border-radius-lg);
+}
+
+.tabContent {
+  padding-top: 8px;
+}
+
+.uploader {
+  margin-bottom: 24px;
+}
+
+.uploader :global(.ant-upload-drag) {
+  border-radius: var(--border-radius);
+}
+
+.fileTable :global(.ant-table) {
+  border-radius: var(--border-radius);
+}
+
+.fileName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.progress {
+  width: 100px;
+}

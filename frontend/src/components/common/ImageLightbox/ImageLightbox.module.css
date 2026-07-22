@@ -1,0 +1,21 @@
+/**
+ * 图片灯箱样式
+ */
+
+.lightboxModal :global(.ant-modal-content) {
+  padding: 12px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}

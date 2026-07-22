@@ -1,0 +1,28 @@
+.chunkCard {
+  transition: all 0.3s;
+  border-color: #f0f0f0;
+}
+
+.chunkCard:hover {
+  border-color: #1890ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chunkHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+}
+
+.chunkIndex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: monospace;
+}
+
+.previewContent {
+  /* 样式已内联，这里仅保留必要的 */
+}

@@ -1,0 +1,109 @@
+/**
+ * 召回测试样式
+ */
+
+.container {
+  min-height: 500px;
+}
+
+.configCard {
+  position: sticky;
+  top: 24px;
+}
+
+.formItem {
+  margin-bottom: 24px;
+}
+
+.formItem:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.resultContainer {
+  min-height: 500px;
+}
+
+.queryTime {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.resultList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resultCard {
+  border-radius: var(--border-radius);
+  transition: box-shadow 0.3s;
+}
+
+.resultCard:hover {
+  box-shadow: var(--shadow);
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.resultRank {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.scoreSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scoreLabel {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.scoreProgress {
+  width: 100px;
+}
+
+.resultMeta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.resultContent {
+  padding: 12px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resultImage {
+  margin-top: 12px;
+}
+
+.resultImage img {
+  max-width: 200px;
+  border-radius: var(--border-radius);
+}

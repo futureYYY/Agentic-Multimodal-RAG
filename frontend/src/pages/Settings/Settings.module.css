@@ -1,0 +1,51 @@
+/**
+ * 系统设置页样式
+ */
+
+.container {
+  max-width: 1200px;
+}
+
+.content {
+  display: flex;
+  gap: 24px;
+}
+
+.fullPanel {
+  flex: 1;
+  width: 100%;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  border-radius: var(--border-radius-lg);
+}
+
+.modelOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modelProvider {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+}
