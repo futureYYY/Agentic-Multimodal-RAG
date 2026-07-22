@@ -1,0 +1,188 @@
+/**
+ * 智能对话页样式
+ */
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+}
+
+.configCard {
+  margin-bottom: 16px;
+  border-radius: var(--border-radius-lg);
+  flex-shrink: 0;
+}
+
+.configRow {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.configItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.configItem label {
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.chatCard {
+  flex: 1;
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatCard :global(.ant-card-body) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.messagesContainer {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.messageWrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.userMessage {
+  justify-content: flex-end;
+}
+
+.assistantMessage {
+  justify-content: flex-start;
+}
+
+.messageContent {
+  max-width: 80%;
+}
+
+.messageBubble {
+  padding: 12px 16px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--bg-secondary);
+}
+
+.userMessage .messageBubble {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.userMessage .messageBubble :global(code) {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.thinking {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--error-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Agent 思考步骤 */
+.agentSteps {
+  margin-bottom: 8px;
+}
+
+.agentSteps :global(.ant-collapse-header) {
+  padding: 4px 0 !important;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.stepContent {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* 引用来源 */
+.citations {
+  margin-top: 8px;
+}
+
+.citations :global(.ant-collapse-header) {
+  padding: 4px 0 !important;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.citationList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.citationItem {
+  padding: 8px;
+  background-color: var(--bg-tertiary);
+  border-radius: var(--border-radius);
+}
+
+.citationHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.citationContent {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* 输入区 */
+.inputArea {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border-color-light);
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.input {
+  flex: 1;
+}
+
+.inputActions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,126 @@
+/**
+ * Markdown 渲染样式
+ */
+
+.markdownRenderer {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.markdownRenderer p {
+  margin-bottom: 12px;
+}
+
+.markdownRenderer h1,
+.markdownRenderer h2,
+.markdownRenderer h3,
+.markdownRenderer h4,
+.markdownRenderer h5,
+.markdownRenderer h6 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.markdownRenderer h1 {
+  font-size: 24px;
+}
+
+.markdownRenderer h2 {
+  font-size: 20px;
+}
+
+.markdownRenderer h3 {
+  font-size: 18px;
+}
+
+.markdownRenderer h4 {
+  font-size: 16px;
+}
+
+.markdownRenderer ul,
+.markdownRenderer ol {
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+
+.markdownRenderer li {
+  margin-bottom: 4px;
+}
+
+.markdownRenderer blockquote {
+  margin: 16px 0;
+  padding: 8px 16px;
+  border-left: 4px solid var(--primary-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.markdownRenderer hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 24px 0;
+}
+
+.markdownRenderer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.markdownRenderer a:hover {
+  text-decoration: underline;
+}
+
+.markdownRenderer img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+}
+
+/* 表格容器 */
+.tableContainer {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.tableContainer table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer th,
+.tableContainer td {
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.tableContainer th {
+  background-color: var(--bg-tertiary);
+  font-weight: 600;
+}
+
+.tableContainer tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+/* 代码块 */
+.markdownRenderer code {
+  font-family: var(--font-family-code);
+  background-color: var(--bg-tertiary);
+  padding: 2px 6px;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9em;
+}
+
+.markdownRenderer pre {
+  margin: 16px 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.markdownRenderer pre code {
+  background: transparent;
+  padding: 0;
+}

@@ -1,0 +1,128 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f0f2f5;
+  overflow: hidden; /* 防止整个页面出现滚动条 */
+  width: 100%; /* 确保容器宽度为 100% */
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  /* padding 已在 PageHeader 组件内部处理，或者由外部样式控制，这里可能不需要覆盖 padding */
+}
+
+/* 修正 Sider 和 Content 的高度计算 */
+.layout {
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  display: flex; /* 强制 flex */
+  flex-direction: row; /* 强制 row */
+  align-items: stretch; /* 确保子项拉伸填满高度 */
+}
+
+.sider {
+  border-right: 1px solid #f0f0f0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  flex-shrink: 0;
+  width: 250px; /* 稍微减小侧边栏宽度，给右侧留更多空间 */
+}
+
+/* 修正 Menu 容器样式，使其填满剩余空间并支持滚动 */
+.menuContainer {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.content {
+  flex: 1; /* 占据剩余宽度 */
+  min-width: 0; /* 关键：防止 flex 子项内容撑开导致溢出或计算错误 */
+  padding: 16px; /* 减小内边距，增加可视区域 */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 确保高度填满 */
+}
+
+.previewArea {
+  flex: 1;
+  overflow-y: auto; /* 允许内部滚动 */
+  background: #fff;
+  padding: 16px; /* 减小内边距 */
+  border-radius: 8px;
+  width: 100%; /* 确保占满宽度 */
+}
+
+.fileListHeader {
+  padding: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  flex-shrink: 0; /* 防止标题被压缩 */
+}
+
+.fileItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 8px; /* 增加右侧间距，避免与 Check 图标重叠 */
+}
+
+.fileInfo {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1; /* 占据剩余空间 */
+  margin-right: 8px; /* 与图标的间距 */
+  line-height: 1.2; /* 紧凑行高 */
+}
+
+.fileName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.fileMeta {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.previewHeader {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currentFileName {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.chunkCount {
+  color: #999;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-content: flex-start; /* 确保内容从顶部开始排列，避免分散 */
+}
+
+.loading {
+  height: 100%;
+  width: 100%; /* 确保占满宽度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

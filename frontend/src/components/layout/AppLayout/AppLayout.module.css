@@ -1,0 +1,9 @@
+/**
+ * 应用布局样式
+ */
+
+.appLayout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}

@@ -1,0 +1,47 @@
+/**
+ * 页面头部样式
+ */
+
+.pageHeader {
+  margin-bottom: 24px;
+}
+
+.breadcrumb {
+  margin-bottom: 16px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.backButton {
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+}
+
+.extra {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

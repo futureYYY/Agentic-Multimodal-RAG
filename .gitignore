@@ -1,0 +1,35 @@
+# Local configuration and credentials
+.env
+**/.env
+!.env.example
+**/.env.*
+!**/.env.example
+
+# Runtime data and generated artifacts
+local.db
+**/local.db
+**/local.db-shm
+**/local.db-wal
+backend/storage/
+**/chroma_db/
+*.sqlite
+*.sqlite3
+*.db
+
+# Python caches and local tooling output
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.log
+debug_output*.txt
+debug_run.log
+
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Local-only diagrams and reports
+架构图.png

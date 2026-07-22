@@ -1,0 +1,95 @@
+/**
+ * 切分预览页样式
+ */
+
+.container {
+  max-width: 1200px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.chunkList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chunkCard {
+  border-radius: var(--border-radius-lg);
+}
+
+.chunkHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chunkIndex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contentSection {
+  margin-bottom: 12px;
+}
+
+.contentInput {
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+.vlmSection {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  padding: 12px;
+}
+
+.vlmLabel {
+  margin-bottom: 8px;
+}
+
+.vlmContent {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.imageSection {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.imageSection:hover .imageOverlay {
+  opacity: 1;
+}

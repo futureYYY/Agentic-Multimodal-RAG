@@ -1,0 +1,10 @@
+/**
+ * 主内容区样式
+ */
+
+.mainContent {
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+  padding: 24px;
+  background-color: var(--bg-secondary);
+}
