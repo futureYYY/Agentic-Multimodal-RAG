@@ -1,10 +1,10 @@
 <div align="center">
 
-# Multimodal Agent RAG
+# Agentic Multimodal RAG
 
-**把 PDF、Word、表格和图片变成可检索、可评估、可追溯的 Agent 知识库**
+**把 PDF、Word、表格和图片变成可检索、可追溯的 Agent 知识库**
 
-面向复杂文档的多模态 Agentic RAG 系统：组合向量检索与 BM25，经过重排和上下文扩展后，由 Agent 判断结果质量并在必要时重新检索。
+面向复杂文档的 Agentic Multimodal Retrieval-Augmented Generation (RAG) 系统：组合向量检索与 BM25，经过重排和上下文扩展后，由 LangGraph Agent 判断结果质量并在必要时重新检索。
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -18,9 +18,9 @@
 
 ## 为什么做这个项目？
 
-常见 RAG Demo 往往停留在“切块、向量搜索、生成回答”。Multimodal Agent RAG 关注更完整的知识处理闭环：文档结构如何保留、图像如何进入索引、关键词和语义召回如何融合、低质量检索如何被识别，以及整个过程如何在界面中被观察和调试。
+常见 RAG Demo 往往停留在“切块、向量搜索、生成回答”。Agentic Multimodal RAG 关注更完整的知识处理闭环：文档结构如何保留、图像如何进入索引、关键词和语义召回如何融合、低质量检索如何被识别，以及整个过程如何在界面中被观察和调试。
 
-| 常见实现 | Multimodal Agent RAG |
+| 常见实现 | Agentic Multimodal RAG |
 | --- | --- |
 | 主要处理纯文本 | 支持 PDF、Word、Markdown、文本、表格和图片 |
 | 仅使用向量相似度 | Vector、BM25、加权 Hybrid 三种检索模式 |
@@ -149,8 +149,8 @@ Parser -> Chunk -> Index    Intent -> Retrieve -> Observe -> Retry
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/futureYYY/Multimodal-Agent-RAG.git
-cd Multimodal-Agent-RAG
+git clone https://github.com/futureYYY/Agentic-Multimodal-RAG.git
+cd Agentic-Multimodal-RAG
 ```
 
 ### 2. 启动后端
